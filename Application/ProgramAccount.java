@@ -1,9 +1,8 @@
 package model.Application;
 
-import academy.maratonajava.javacore.Gassociacao.Dominio.Local;
+
 import model.entities.Account;
 
-import java.text.Format;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -30,9 +29,9 @@ public class ProgramAccount {
         System.out.print("Enter amount for withdraw: ");
         double sacar = sc.nextDouble();
 
-        account.sacar(sacar );
+        account.sacar(sacar);
 
-        System.out.print("Novo saldo: " + String.format("%.2f ",account.getSaldo()) );
+        System.out.print("Novo saldo: " + String.format("%.2f ", account.getSaldo()));
 
 
         sc.close();
